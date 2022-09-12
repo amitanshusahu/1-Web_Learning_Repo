@@ -1,0 +1,40 @@
+<!DOCTYPE html oncli>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        div{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border-top: 6px solid darkorchid;
+            animation: spin 2s linear infinite ;
+        }
+
+        @keyframes spin {
+            0%{
+                transform: rotateZ(0deg);
+                border-color:red ;
+            } 
+            30%{
+                transform: rotateZ(80deg);
+                border-color:rgb(13, 255, 0) ;
+            } 
+            60%{
+                transform: rotateZ(170deg);
+                border-color:rgb(0, 47, 255) ;
+            } 
+            100%{
+                transform: rotateZ(360deg);
+                border-color:rgb(255, 230, 0) ;
+            }
+        }
+    </style>
+    <div></div>
+</body>
+</html>

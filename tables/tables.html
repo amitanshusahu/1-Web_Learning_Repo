@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+            width: 100%;
+            height: 100%;
+            overflow: scroll;
+        }
+        table{
+            border-collapse: collapse;
+border-spacing: 0;
+width: 100%;
+margin-bottom: 1em;
+border: none;
+        }
+        thead tr{
+            background-color: rgb(165, 126, 42) !important;
+            color: white;
+        }
+        th{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        tr,td{
+            text-align: center;
+            
+        }
+        tbody tr:nth-child(odd){
+            background-color:#f3f3f3;
+        }
+        tbody tr:nth-child(even){
+            background-color: white;
+        }
+        .col-1{
+            background-color: inherit;
+            position: sticky;
+            left: 0; /* these are with respect to the parent*/
+        }
+        .col-2{
+            background-color: inherit;
+            position: sticky;
+            left: 49px;
+            border-radius: 5px;
+        }
+    </style>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                <th class="col-1">Rank</th>
+                <th class="col-2 name">Name</th>
+                <th>Subject</th>
+                <th>Score</th>
+                <th>Branch</th>
+                <th>Collage Stuided</th>
+                <th>Collage Joined</th>
+                <th>Collages Offered</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-1">20</td>
+                    <td class="col-2">Aditya Sharma</td>
+                    <td>Physics(PH)</td>
+                    <td>79.67</td>
+                    <td>Bsc(Physics)</td>
+                    <td>Gautam Buddha University, Greater Noida </td>
+                    <td>IIT Bombay</td>
+                    <td>All IITs</td>
+                </tr>
+                <tr>
+                    <td class="col-1">23</td>
+                    <td class="col-2">Devesh Dhole</td>
+                    <td>Physics (PH)</td>
+                    <td>79</td>
+                    <td>B.E.(CSE)</td>
+                    <td>BITS, Goa</td>
+                    <td>IIT Bombay</td>
+                    <td>All IITs</td>
+                </tr>
+                <tr>
+                    <td class="col-1">31</td>
+                    <td class="col-2">Manish Jain</td>
+                    <td>Physics (PH)</td>
+                    <td>78</td>
+                    <td>BTech ( Mechanical )</td>
+                    <td>NIT Silchar</td>
+                    <td>IIT Kanpur</td>
+                    <td>All IITs</td>
+                </tr>
+                <tr>
+                    <td class="col-1">40</td>
+                    <td class="col-2">Kartik Suresh Prabhu</td>
+                    <td>Physics (PH)</td>
+                    <td>76.67</td>
+                    <td>BTech(Mechanical Engineering)</td>
+                    <td>Sardar Patel College of Engineering, Mumbai</td>
+                    <td>IIT-Bombay</td>
+                    <td>All IITs and IISCs, without restriction for engineering degrees</td>
+                </tr>
+                <tr>
+                    <td class="col-1">56</td>
+                    <td class="col-2">Parteek Bansal </td>
+                    <td>Physics (PH)</td>
+                    <td>73.67</td>
+                    <td>B.Tech. (Mechanical Engineering)</td>
+                    <td>IIT (BHU), Varanasi </td>
+                    <td>IIT Kanpur (withdrew due to personal reasons)</td>
+                    <td>IIT Kanpur</td>
+                </tr>
+                <tr>
+                    <td class="col-1">68</td>
+                    <td class="col-2">Ravi Kunturkar</td>
+                    <td>Physics (PH)</td>
+                    <td>72</td>
+                    <td>BTech (ECE), Minor Physics</td>
+                    <td>NIT Trichy</td>
+                    <td>IIT Bombay</td>
+                    <td>NA</td>
+                </tr>
+                <tr>
+                    <td class="col-1">73</td>
+                    <td class="col-2">Akash Pujari </td>
+                    <td>Physics (PH)</td>
+                    <td>71.33</td>
+                    <td>BTech(ECE)</td>
+                    <td>Osmania University, Hyderabad</td>
+                    <td>IIT Madras</td>
+                    <td>IIT Madras</td>
+                </tr>
+                <tr>
+                    <td class="col-1">79</td>
+                    <td class="col-2">Divyanshu Srivastava</td>
+                    <td>Physics (PH)</td>
+                    <td>70.33</td>
+                    <td>BTech(CSE)</td>
+                    <td>IIIT-Ranchi</td>
+                    <td>IIT-K</td>
+                    <td>All IITs except IIT-Bombay</td>
+                </tr>
+                <tr>
+                    <td class="col-1">89</td>
+                    <td class="col-2">Jay Solanki</td>
+                    <td>Physics (PH)</td>
+                    <td>69.67</td>
+                    <td>BTech (ECE)</td>
+                    <td>NIT, Surat</td>
+                    <td>IIT Delhi</td>
+                    <td>IIT Delhi</td>
+                </tr>
+                <tr>
+                    <td class="col-1">93</td>
+                    <td class="col-2">Soham Choudhury</td>
+                    <td>Physics (PH)</td>
+                    <td>69.33</td>
+                    <td>BTech (Electrical)</td>
+                    <td>Jadavpur University</td>
+                    <td>IITK</td>
+                    <td>IITM IITD IITK</td>
+                </tr>
+                <tr>
+                    <td class="col-1">172</td>
+                    <td class="col-2">Divij Gupta</td>
+                    <td></td>
+                    <td>64.33</td>
+                    <td>B.sc(Physics)</td>
+                    <td>Lucknow University, UTTAR PRADESH</td>
+                    <td>IIT kanpur</td>
+                    <td>IIT kanpur</td>
+                </tr>
+                <tr>
+                    <td class="col-1">174</td>
+                    <td class="col-2">Akhil Kumar Awasthi</td>
+                    <td>Physics (PH)</td>
+                    <td>64.33</td>
+                    <td>BSc(Physics)</td>
+                    <td>University of Lucknow </td>
+                    <td>HRI (Through Jest)</td>
+                    <td>IIT KANPUR</td>
+                </tr>
+                <tr>
+                    <td class="col-1">217</td>
+                    <td class="col-2"> NA </td>
+                    <td>Mathematics (MA)</td>
+                    <td>41</td>
+                    <td>Btech (Mechanical Engineering)</td>
+                    <td>IIT Hyderabad</td>
+                    <td>IIT Hyderabad</td>
+                    <td>IIT Hyderabad</td>
+                </tr>
+                <tr>
+                    <td class="col-1">227</td>
+                    <td class="col-2">Pawan Patel</td>
+                    <td>Mathematics (MA)</td>
+                    <td>40.67</td>
+                    <td>Bsc mathematics</td>
+                    <td>Cvru Bilaspur Chhattisgarh</td>
+                    <td>IISER BHOPAL</td>
+                    <td>IIT DELHI</td>
+                </tr>
+                <tr>
+                    <td class="col-1">260</td>
+                    <td class="col-2">Debankur Basak</td>
+                    <td>Physics (PH)</td>
+                    <td>60.33</td>
+                    <td>Bsc (Physics)</td>
+                    <td>Scottish Church college, kolkata</td>
+                    <td>IIT M</td>
+                    <td>IIT M</td>
+                </tr>
+                <tr>
+                    <td class="col-1">280</td>
+                    <td class="col-2">Sankar Maradana</td>
+                    <td>Physics (PH)</td>
+                    <td>59.33</td>
+                    <td>BTech (Mechanical)</td>
+                    <td>IIT Bhubaneswar</td>
+                    <td>IIT Madras</td>
+                    <td>IIT Madras</td>
+                </tr>
+                <tr>
+                    <td class="col-1">297</td>
+                    <td class="col-2">Pritam Dalal</td>
+                    <td>Physics (PH)</td>
+                    <td>59</td>
+                    <td>B.Sc(PHYSICS)</td>
+                    <td>Barasat Government College,  West Bengal</td>
+                    <td>Ramkrishna mission Vivekananda educationa and research university,  Belur</td>
+                    <td>IIT KGP</td>
+                </tr>
+                <tr>
+                    <td class="col-1">301</td>
+                    <td class="col-2">Koustabh Gogoi</td>
+                    <td>Physics (PH)</td>
+                    <td>58.67</td>
+                    <td>BSc(Major-Physics, Minors-Maths, Statistics)</td>
+                    <td>Cotton University, Guwahati</td>
+                    <td>IIT-Guwahati</td>
+                    <td>IIT-Guwahati</td>
+                </tr>
+                <tr>
+                    <td class="col-1">318</td>
+                    <td class="col-2">Omkar Karnik</td>
+                    <td>Physics (PH)</td>
+                    <td>58</td>
+                    <td>BTech Mechanical</td>
+                    <td>Mumbai University</td>
+                    <td>IIT Guwahati</td>
+                    <td>IIT Guwahati, Gandhinagar, Hyderabad, Indore, Mandi</td>
+                </tr>
+                <tr>
+                    <td class="col-1">413</td>
+                    <td class="col-2">Amey Bagare</td>
+                    <td>Physics (PH)</td>
+                    <td>55</td>
+                    <td>Bsc physics </td>
+                    <td>Mumbai University Mumbai </td>
+                    <td>2nd year, Admission not taken</td>
+                    <td>IIT GN, IIT I ,IIT BHU ,IIT RPR</td>
+                </tr>
+                <tr>
+                    <td class="col-1">477</td>
+                    <td class="col-2">Ananya Biswas</td>
+                    <td>Physics (PH)</td>
+                    <td>53.33</td>
+                    <td>BSc Physics (Honours), Mathematics (General), Chemistry (General)</td>
+                    <td>Maulana Azad College, Kolkata</td>
+                    <td>NIT Rourkela</td>
+                    <td>IIT Ropar, NIT Rourkela, IIT Dhanbad</td>
+                </tr>
+                <tr>
+                    <td class="col-1">481</td>
+                    <td class="col-2">Md Asif Zia</td>
+                    <td>Physics (PH)</td>
+                    <td>53.33</td>
+                    <td>BSc (Physics)</td>
+                    <td>BIT Mesra</td>
+                    <td>IIT Gandhinagar</td>
+                    <td>IIT Gandhinagar</td>
+                </tr>
+                <tr>
+                    <td class="col-1">501</td>
+                    <td class="col-2">Aravinth Ram K</td>
+                    <td>Physics (PH)</td>
+                    <td>53</td>
+                    <td>B.Sc. (Physics)</td>
+                    <td>Thiagarajar College, Affiliated to Madurai Kamaraj University, Madurai, Tamil Nadu.</td>
+                    <td>IIT Kharagpur</td>
+                    <td>IIT Kharagpur, IIT Guwahati</td>
+                </tr>
+                <tr>
+                    <td class="col-1">555</td>
+                    <td class="col-2">Gaurav Kulkarni</td>
+                    <td>Physics (PH)</td>
+                    <td>51.67</td>
+                    <td>B.Sc Hons. Physics</td>
+                    <td>Devi Ahilya Vishwavidyalaya Indore (M.P)</td>
+                    <td>IIT Bhubaneshwar</td>
+                    <td>IIT Patna, IIT Jodhpur</td>
+                </tr>
+                <tr>
+                    <td class="col-1">579</td>
+                    <td class="col-2">Hemanth Potluri</td>
+                    <td>Physics (PH)</td>
+                    <td>52</td>
+                    <td>BE(Mechanical)</td>
+                    <td>BITS-PILANI</td>
+                    <td>IIT Indore</td>
+                    <td>IIT Palakkad,Mandi and Indire</td>
+                </tr>
+                <tr>
+                    <td class="col-1">585</td>
+                    <td class="col-2">Piyush Saklani </td>
+                    <td>Physics (PH)</td>
+                    <td>51.33</td>
+                    <td>BTech (CE)</td>
+                    <td>Graphic Era hill university</td>
+                    <td>IIT Hyderabad </td>
+                    <td>IIT Indore, gandhinagar, bhu etc</td>
+                </tr>
+                <tr>
+                    <td class="col-1">501</td>
+                    <td class="col-2">Aravinth Ram K</td>
+                    <td>Physics (PH)</td>
+                    <td>53</td>
+                    <td>B.Sc. (Physics)</td>
+                    <td>Thiagarajar College, Affiliated to Madurai Kamaraj University, Madurai, Tamil Nadu.</td>
+                    <td>IIT Kharagpur</td>
+                    <td>IIT Kharagpur, IIT Guwahati</td>
+                </tr>
+                <tr>
+                    <td class="col-1">555</td>
+                    <td class="col-2">Gaurav Kulkarni</td>
+                    <td>Physics (PH)</td>
+                    <td>51.67</td>
+                    <td>B.Sc Hons. Physics</td>
+                    <td>Devi Ahilya Vishwavidyalaya Indore (M.P)</td>
+                    <td>IIT Bhubaneshwar</td>
+                    <td>IIT Patna, IIT Jodhpur</td>
+                </tr>
+                <tr>
+                    <td class="col-1">579</td>
+                    <td class="col-2">Hemanth Potluri</td>
+                    <td>Physics (PH)</td>
+                    <td>52</td>
+                    <td>BE(Mechanical)</td>
+                    <td>BITS-PILANI</td>
+                    <td>IIT Indore</td>
+                    <td>IIT Palakkad,Mandi and Indire</td>
+                </tr>
+                <tr>
+                    <td class="col-1">585</td>
+                    <td class="col-2"> NA </td>
+                    <td>Physics (PH)</td>
+                    <td>51.33</td>
+                    <td>BTech (CE)</td>
+                    <td>Graphic Era hill university</td>
+                    <td>IIT Hyderabad</td>
+                    <td>IIT Indore, gandhinagar, bhu etc</td>
+                </tr>
+                <tr>
+                    <td class="col-1">600</td>
+                    <td class="col-2">Abhiraj Uppal</td>
+                    <td>Physics (PH)</td>
+                    <td>51</td>
+                    <td>Btech ME</td>
+                    <td>A.K.T.U. Lucknow</td>
+                    <td>IIT JODHPUR</td>
+                    <td>IIT DHANBAD, PATNA, PALAKKAD, MANDI</td>
+                </tr>
+                <tr>
+                    <td class="col-1">658</td>
+                    <td class="col-2">Akash Singh</td>
+                    <td>Physics (PH)</td>
+                    <td>49.67</td>
+                    <td>BTech(EE)</td>
+                    <td>AKTU Lucknow</td>
+                    <td>IIT(ISM) Dhanbad</td>
+                    <td>IIT(ISM) Dhanbad</td>
+                </tr>
+                <tr>
+                    <td class="col-1">702</td>
+                    <td class="col-2">Vivek Verma</td>
+                    <td>Physics (PH)</td>
+                    <td>48.65</td>
+                    <td>B Tech (Mechanical)</td>
+                    <td>NITRR, Raipur</td>
+                    <td>IIT- Gandhinagar</td>
+                    <td>All iits accept top 6. As I also got benefitted by my OBC NCL catagory</td>
+                </tr>
+                <tr>
+                    <td class="col-1">707</td>
+                    <td class="col-2">Sumit Yadav</td>
+                    <td>Physics (PH)</td>
+                    <td>48.67</td>
+                    <td>Bsc(H) physics</td>
+                    <td>Calcutta University, new Alipore college</td>
+                    <td>Jawaharlal Nehru centre for advanced scientific research (jncasr)</td>
+                    <td>Jncasr</td>
+                </tr>
+                <tr>
+                    <td class="col-1">745</td>
+                    <td class="col-2">Shivanshu tomar</td>
+                    <td>Physics (PH)</td>
+                    <td>48</td>
+                    <td>B.E.(Chemical engineering)</td>
+                    <td>Rajiv Gandhi proudyogiki vishwavidhyalaya </td>
+                    <td>IIT Mandi</td>
+                    <td>IIT Mandi</td>
+                </tr>
+                <tr>
+                    <td class="col-1">750</td>
+                    <td class="col-2">Satyajit Chakraborty </td>
+                    <td>Physics (PH)</td>
+                    <td>47.67</td>
+                    <td>BSc (Physics)</td>
+                    <td>University of Calcutta </td>
+                    <td>NIT Rourkela</td>
+                    <td>IIT PALAKKAD MSc(physics), IIT KGP (Medical physics int PhD), IIT Dhanbad (MSc tech Geophysics), IIT Jodhpur (MSc - Mtech physics)</td>
+                </tr>
+                <tr>
+                    <td class="col-1">778</td>
+                    <td class="col-2">Kairamkonda praveenkumar</td>
+                    <td>Physics (PH)</td>
+                    <td>48</td>
+                    <td>BSc physics</td>
+                    <td>Osmania university hyderabad</td>
+                    <td>Iit indore</td>
+                    <td>Iit indore and below institutions</td>
+                </tr>
+                <tr>
+                    <td class="col-1">891</td>
+                    <td class="col-2">Gorige Pavan</td>
+                    <td>Physics (PH)</td>
+                    <td>45</td>
+                    <td>Bsc (m.p.c)</td>
+                    <td>Osmania University </td>
+                    <td>Iit kgp</td>
+                    <td>IITS ,NITS and CFI</td>
+                </tr>
+                <tr>
+                    <td class="col-1">914</td>
+                    <td class="col-2">Sarvesh Gharat</td>
+                    <td>Physics (PH)</td>
+                    <td>44.67</td>
+                    <td>BTech (ECE)</td>
+                    <td>VIIT Pune</td>
+                    <td>Got PhD offers from all 4 places I applied, choosed direct PhD CMINDS, IIT Bombay (GATE Physics)</td>
+                    <td>Didn't register for counseling</td>
+                </tr>
+                <tr>
+                    <td class="col-1">1256</td>
+                    <td class="col-2">Prashant singh</td>
+                    <td>Physics (PH)</td>
+                    <td>40.33</td>
+                    <td>Bsc(physics,mathematics,statistics)</td>
+                    <td>RLSI belagavi(karnataka)</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="col-1">1428</td>
+                    <td class="col-2">Manish Varshney </td>
+                    <td>Physics (PH)</td>
+                    <td>34.5</td>
+                    <td>BSc (Physics)</td>
+                    <td>Aligarh Muslim University, Aligarh, Uttar Pradesh</td>
+                    <td>N/A, Dropped the Year</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="col-1">1464</td>
+                    <td class="col-2">Hari om</td>
+                    <td>Physics (PH)</td>
+                    <td>38</td>
+                    <td>Bsc physical science </td>
+                    <td>Gautam Buddha University greater noida</td>
+                    <td>Nit Durgapur</td>
+                    <td>Niser, iiser tvm, nits except Thiruvananthapuram, rourkela, surathkal,wrangal</td>
+                </tr>
+                <tr>
+                    <td class="col-1">1590</td>
+                    <td class="col-2"> NA </td>
+                    <td>Mathematics (MA)</td>
+                    <td>24.67</td>
+                    <td>B.Tech Mechatronics</td>
+                    <td>SRM University</td>
+                    <td>None</td>
+                    <td>Diat Pune - Material Science</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
